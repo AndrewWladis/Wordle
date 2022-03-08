@@ -1,0 +1,119 @@
+@font-face {
+    font-family: marvelFont;
+    src: url(MarvelRegular-Dj83.ttf);
+}
+
+@font-face {
+    font-family: captainmarvelFont;
+    src: url(Captainmarvel-anm9.ttf);
+}
+
+@import url('https://fonts.googleapis.com/css2?family=League+Gothic&display=swap');
+
+@keyframes correct {
+    0% {transform: initial;}
+    30% {transform: rotate(5deg);}
+    70% {transform: rotate(-5deg);}
+    100% {transform: initial;}
+}
+
+@keyframes wrong {
+    0% {transform: initial;}
+    30% {transform: rotateX(75deg);}
+    100% {transform: initial;}
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: 'League Gothic', sans-serif;
+}
+
+form div {
+    padding: 1%;
+}
+
+form label {
+    color: rgb(74, 74, 248);
+}
+
+html {
+    background-color: rgb(250, 250, 250);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /*align-items: center;*/
+    font-family: captainmarvelFont;
+}
+
+.box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    outline: 2px solid rgb(146, 146, 146);
+    background-color: white;
+    min-height: 50px;
+    min-width: 50px;
+    margin: 2%;
+    border-radius: 0.4%;
+    font-family: 'League Gothic', sans-serif;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;  
+}
+
+.row {
+    display: flex;
+    /*justify-content: space-between;*/
+    flex-direction: row;    
+}
+
+#alert {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(250, 250, 250);
+}
+
+#black-container {
+    background-color: rgb(250, 250, 250);
+    border-radius: 5%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;  
+}
+
+#break {
+    border-bottom: 2px solid rgb(92, 92, 92);
+    margin: 1%;
+    width: 100%;
+}
+
+#board {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    padding-right: 3%;
+}
+
+#board p {
+    font-size: x-large;
+    margin: 0;
+}
+
+#heading {
+    margin-top: 0;
+}
+
+#logo {
+    max-width: 150px;
+    padding-left: 1%;
+}
