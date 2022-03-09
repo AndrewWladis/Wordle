@@ -24,7 +24,7 @@ let word;
 if (day === 1) {
     word = ['C', 'L', 'O', 'A', 'K']
 } else if (day === 2) {
-    word = ['A', 'N', 'G', 'E', 'L']
+    word = ['L', 'O', 'K', 'I', 'S']
 } else if (day === 3) {
     word = ['A', 'N', 'G', 'E', 'L']
 } else if (day === 4) {
