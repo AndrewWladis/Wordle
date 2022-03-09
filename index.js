@@ -141,6 +141,7 @@ function addToBoard(e) {
             } else if (result == 'tobey') {
                 greenCount = 5;
                 for (let i = 0; i != currentrow.length; i++) {
+                    document.getElementById(`${i}-${rowCount}`).style.color = 'white';
                     document.getElementById(`b${i}-${rowCount}`).style.backgroundColor = '#e6e600';
                     document.getElementById(`b${i}-${rowCount}`).style.backgroundColor = 'green'
                     document.getElementById(`b${i}-${rowCount}`).style.animation = 'correct 1s';
