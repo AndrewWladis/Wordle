@@ -18,26 +18,20 @@ let board = {
 }
 
 const date = new Date();
-let day = date.getDay()
+let month = date.getMonth()
+let day = date.getDate()
 let word;
 
-if (day === 1) {
-    word = ['C', 'L', 'O', 'A', 'K']
-} else if (day === 2) {
-    word = ['L', 'O', 'K', 'I', 'S']
-} else if (day === 3) {
-    word = ['A', 'N', 'G', 'E', 'L']
-} else if (day === 4) {
-    word = ['V', 'E', 'N', 'O', 'M']
-} else if (day === 5) {
-    word = ['B', 'E', 'A', 'S', 'T']
-} else if (day === 6) {
-    word = ['G', 'R', '0', '0', 'T']
-} else if (day === 7) {
-    word = ['B', 'L', 'A', 'D', 'E']
+if (month >= 6) {
+    word = marvel[day];
+} else if (month < 6) {
+    word = marvel[day + 28];
 }
 
-console.log(word, day)
+console.log(word)
+
+
+
 //const word = randomWord();
 let isGameGoin = true;
 const submitButtton = document.getElementById('submit');
