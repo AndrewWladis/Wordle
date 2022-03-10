@@ -25,7 +25,7 @@ let word;
 if (month >= 6) {
     word = marvel[day];
 } else if (month < 6) {
-    word = marvel[day + 28];
+    word = marvel[day + 28].toUpperCase().split("");
 }
 
 console.log(word)
