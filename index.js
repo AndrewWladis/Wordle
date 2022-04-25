@@ -1,4 +1,4 @@
-const marvel = ['bucky', 'groot', 'lokis', 'abyss', 'angel', 'beast', 'blade', 'cloak', 'miles', 'rhino', 'marvel', 'hulks', 'cable', 'venom', 'toxin', 'corps', 'goose', 'speed', 'death', 'druig', 'shuri', 'okoye', 'forge', 'ghost', 'havok', 'hippo', 'baron', 'wanda', 'kazar', 'knull', 'hydra', 'widow', 'witch', 'flash', 'modok', 'magus', 'maker', 'mimic', 'morph', 'nakia', 'omega', 'sword', 'rogue', 'ronan', 'gwens', 'kaine', 'kangs', 'karma', 'stark', 'rambo', 'clint', 'mojos', 'namor', 'furys', 'novas', 'nukes', 'odins', 'pyros', 'quake', 'skull', 'wasps', 'steve', 'tonys', 'ronin', 'sersi', 'shaws', 'storm', 'thors', 'thing', 'toads', 'xorns', 'xmans', 'ymirs', 'yondu', 'zemos', 'zero', 'zorn', 'peter']
+const marvel = ['bucky', 'groot', 'lokis', 'abyss', 'angel', 'beast', 'blade', 'cloak', 'miles', 'rhino', 'marvel', 'hulks', 'cable', 'venom', 'toxin', 'corps', 'goose', 'speed', 'death', 'druig', 'shuri', 'okoye', 'forge', 'ghost', 'havok', 'hippo', 'baron', 'wanda', 'kazar', 'knull', 'hydra', 'widow', 'witch', 'flash', 'modok', 'magus', 'maker', 'mimic', 'morph', 'nakia', 'omega', 'sword', 'rogue', 'ronan', 'gwens', 'kaine', 'kangs', 'karma', 'stark', 'rambo', 'clint', 'mojos', 'namor', 'furys', 'novas', 'quill', 'nukes', 'odins', 'pyros', 'quake', 'skull', 'wasps', 'steve', 'tonys', 'ronin', 'sersi', 'shaws', 'storm', 'thors', 'thing', 'toads', 'xorns', 'xmans', 'ymirs', 'yondu', 'zemos', 'zero', 'zorn', 'peter', 'magik', 'langs', 'quill', 'thwip']
 
 //function randomWord() {
     //let num = get a random number 0 through marvel.length -1
@@ -53,8 +53,6 @@ function setNextRow() {
         console.log(rowCount)
     } else if (rowCount == 5) {
         document.getElementById('alert').innerText = 'You Lost. Come Back Tomorrow';
-        document.getElementById('alert').style.color = 'white';
-        document.getElementById('black-container').style.backgroundColor = 'black'
         isGameGoin = false;
         //stop game because of loss
     }
