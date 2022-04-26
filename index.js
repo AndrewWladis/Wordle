@@ -1,5 +1,5 @@
 const marvel = ['bucky', 'groot', 'lokis', 'abyss', 'angel', 'beast', 'blade', 'cloak', 'miles', 'rhino', 'marvel', 'hulks', 'cable', 'venom', 'toxin', 'corps', 'goose', 'speed', 'death', 'druig', 'shuri', 'okoye', 'forge', 'ghost', 'havok', 'hippo', 'baron', 'wanda', 'kazar', 'knull', 'hydra', 'widow', 'witch', 'flash', 'modok', 'magus', 'maker', 'mimic', 'morph', 'nakia', 'omega', 'sword', 'rogue', 'ronan', 'gwens', 'kaine', 'kangs', 'karma', 'stark', 'rambo', 'clint', 'mojos', 'namor', 'furys', 'novas', 'quill', 'nukes', 'odins', 'pyros', 'quake', 'skull', 'wasps', 'steve', 'tonys', 'ronin', 'sersi', 'shaws', 'storm', 'thors', 'thing', 'toads', 'xorns', 'xmans', 'ymirs', 'yondu', 'zemos', 'zero', 'zorn', 'peter', 'magik', 'langs', 'quill', 'thwip']
-
+const share = document.getElementById('share');
 //function randomWord() {
     //let num = get a random number 0 through marvel.length -1
     //let marvel = movies[num];
@@ -29,8 +29,6 @@ if (month >= 6) {
 }
 
 console.log(word)
-
-
 
 //const word = randomWord();
 let isGameGoin = true;
@@ -125,6 +123,7 @@ function addToBoard(e) {
                         }
                         document.getElementById('alert').style.color = 'green';
                         document.getElementById('alert').innerText = 'You Win! Come Back Tomorrow';
+                        share.style.opacity = '100%';
                         isGameGoin = false
                         //stop game from win 
                     }
@@ -160,3 +159,8 @@ function addToBoard(e) {
     }
 }
 document.addEventListener('keydown', addToBoard)
+
+//share
+share.onclick = function(){
+    navigator.clipboard.writeText(`Marvel Wordle ${rowCount}/5 https://marvelwordle.netlify.app/`);
+}

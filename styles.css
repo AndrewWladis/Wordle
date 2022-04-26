@@ -104,6 +104,12 @@ html {
     font-family: captainmarvelFont;
 }
 
+.center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .container {
     display: flex;
     justify-content: center;
@@ -165,4 +171,9 @@ html {
 #logo {
     max-width: 150px;
     padding-left: 1%;
+}
+
+#share {
+    border-radius: 7%;
+    opacity: 0%;
 }
